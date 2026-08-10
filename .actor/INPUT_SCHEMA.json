@@ -1,0 +1,41 @@
+{
+  "title": "일본 오프몰 중고품 마켓 — 하드오프 공식",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchKeyword": {
+      "title": "Search Keyword",
+      "type": "string",
+      "description": "Search keyword",
+      "prefill": "iPhone",
+      "editor": "textfield"
+    },
+    "maxItems": {
+      "title": "Max Items",
+      "type": "integer",
+      "description": "Max items to collect",
+      "default": 100,
+      "minimum": 1
+    },
+    "maxPages": {
+      "title": "Max Pages",
+      "type": "integer",
+      "description": "Max pages per source",
+      "default": 2,
+      "minimum": 1
+    },
+    "proxyConfiguration": {
+      "title": "Proxy Configuration",
+      "type": "object",
+      "editor": "proxy",
+      "description": "Apify proxy configuration",
+      "default": {
+        "useApifyProxy": true
+      },
+      "prefill": {
+        "useApifyProxy": true
+      }
+    }
+  },
+  "required": []
+}
